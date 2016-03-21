@@ -1,0 +1,121 @@
+.section-key-interests-container
+    +position(fixed, 0 0 0 0)
+    width: auto
+    z-index: 40
+    height: 0vh
+    transition: 1s ease-out
+
+.section-key-interests-container-right
+    +position(fixed, 0 0 0 0)
+    width: 50%
+    z-index: 41
+    height: 100vh
+    margin-left: auto
+    transition : 1s ease-in
+    
+    
+.section-key-interests-container-left
+    +position(fixed, 0 0 0 0)
+    width: 50%
+    height: 100vh
+    z-index: 40
+    margin-right: auto
+    transition : 1s ease-in
+    background:
+        image: url(/assets/images/Untitled-13.svg)
+        repeat: repeat
+        position: 90% 50%
+        size: 1000px
+        
+.section-key-interests-container-right-sub-container-left
+    margin-right: auto
+    width: 30vw
+    height: 100vh
+    +position(relative, 0 0 0 0)
+    z-index: 41
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5), -5px 0px 10px  rgba(0, 0, 0, 0.5)
+    display: flex
+    flex-direction: column   
+    justify-content: space-around
+    background-color: #F16667
+    
+
+.section-key-interests-container-right-sub-container-right
+    +position(relative, -100vh 0 0 0)
+    margin-left: auto
+    width: 20vw
+    height: 100vh
+    z-index: 40
+    background-color: #E6E7E8
+    background:
+        image: url(/assets/images/Untitled-14.svg)
+        repeat: repeat
+        position: 90% 50%
+        size: 850px
+
+.section-key-interests-right-article-container
+    padding: 0 0 0 10px
+    width: 100%
+    text-align: left
+    overflow-y: auto
+    h1
+        margin: 5px 0 10px 0
+        text-decoration: underline 
+    
+.section-key-interests-right-title-container
+    display: flex   
+    justify-content: center
+    align-items: center
+    h1
+        width: 1em
+        margin-top: 30%
+        text-align: center
+        font-size: 4vw
+        line-height: 95%
+        word-wrap: break-word
+        color: #FFCC33    
+        text-shadow: 6px 6px 0px #222222
+        
+
+.section-key-interests-left-title-container
+    +position(absolute, 35% 0 0 59%)
+    transform: translate(-50%, -50%)
+    padding: 2px
+    z-index: 41
+    width: 40vw
+    h1
+        word-wrap: break-word
+        font-size: 5vw
+        color: #F8F8F8    
+        text-align: right 
+        text-shadow: 4px 4px 0px #003366, 6px 6px 0px #FFCC33
+    p   
+        text-align: right
+        font-size: 2em
+        color: #F8F8F8   
+        text-decoration: underline
+        text-shadow: 2px 2px 0px #003366
+                
+            
+
+        
+#sky
+    opacity: 0
+
+
+
+.key-interests-thumbnail-text
+    position: relative
+    top: -30vh
+    left: 10px
+    text-align: center  
+    font-size: 2em
+        
+    
+.key-interests-container
+    background-color: #1D1D1D
+    color: #FDFDFD
+    border-radius: 20px
+    font-size: 1.5em
+    padding: 20px
+    margin-top: 10vh 
