@@ -798,7 +798,7 @@ th {
 
 body {
   overflow-y: scroll;
-  height: 500vh; }
+  height: 400vh; }
 
 .col {
   padding: 0px; }
@@ -1533,7 +1533,8 @@ body {
   margin-left: auto;
   overflow: hidden;
   -webkit-transition: 1s ease-in;
-  transition: 1s ease-in; }
+  transition: 1s ease-in;
+  background-color: white; }
 
 .intro-fixed-container {
   position: fixed;
