@@ -29,23 +29,7 @@
         repeat: no-repeat
         position: center center
         size: 95% 95%
-    
-.section-background-top
-    width: 25vw
-    border-radius: 10px
-    background: rgba(255, 255, 255, 0.4)
-    padding: 20px
-    box-shadow: 2px 2px 5px black
-    stroke: #CCCCCC
-    stroke-width: 2px
-    stroke-linecap: butts
-    troke-linejoin: miter
-    stroke-opacity: 1
-    display: block
-    z-index: 39
-    opacity: 0.9
-    +position(absolute, 50% 0 0 50%)
-    transform: translate(-50%, -50%)
+
     
 .section-skills-left-title-container
     +position(absolute, 35% 0 0 43%)
@@ -60,7 +44,11 @@
         color: #FFCC66   
         text-align: left 
         text-shadow: 4px 4px 0px #663333, 6px 6px 0px #F8F8F8
-        
+        opacity: 0
+        transition: all 1.5s ease-in-out
+        &.section-skills-left-title-container-fade-in-right
+            opacity: 1
+    
 .section-skills-right-sub-container-left
     +position(absolute, 0 0 0 0)
     width: 20%
@@ -94,6 +82,10 @@
         word-wrap: break-word
         color: #006699    
         text-shadow: 6px 6px 0px #FFCC66
+        opacity: 0
+        transition: all 1s ease-in-out 
+        &.section-skills-right-title-container-fadein-top
+            opacity: 1
     
 .section-skills-container-left-mountain-bg-bottom-container
     +size(60vw 100vh)
@@ -144,21 +136,15 @@
         position: 0% 0%
         size: 50vw 100vh
 
-.regularly-codes-with-main-header-container
+.skills-right-sub-container-right-title-container
     h2
         color: white
         text-align: center
         text-decoration: underline
-.is-familiar-with-main-header-container
-    h2
-        color: white
-        text-align: center
-        text-decoration: underline
-.also-enjoys-and-loves-using-main-header-container
-    h2
-        color: white
-        text-align: center
-        text-decoration: underline
+        transition: 0.5s ease-in-out
+        opacity: 0
+        &.skills-right-sub-container-right-title-container-zoom-in
+            opacity: 1
         
 .coding-skills-chart-container
     padding: 5px
@@ -177,12 +163,24 @@
     width: 4vw
     
     
+.skills-svg-pre-animation
+    animation-fill-mode: forwards
+    &.skills-svg-post-animation
+        animation: skills-svg-animation 1.3s ease-in-out
     
-    
-    
-    
-    
-    
+@keyframes skills-svg-animation
+    0%
+        transform: rotate(0deg) scale(1)
+    20%
+        transform: rotate(50deg) scale(1) 
+    40%
+        transform: rotate(0deg) scale(1)
+    60%
+        transform: rotate(0deg) scale(1.1)
+    80%
+        transform: rotate(0deg) scale(1.1)
+    100%
+        transform: rotate(0deg) scale(1)
     
     
     
