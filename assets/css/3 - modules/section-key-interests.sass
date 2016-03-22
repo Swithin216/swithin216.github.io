@@ -58,9 +58,15 @@
     width: 100%
     text-align: left
     overflow-y: auto
+    opacity: 0
+    transform: translateX(20vw)
+    transition: all 1s ease-in-out
     h1
         margin: 5px 0 10px 0
         text-decoration: underline 
+    &.section-key-interests-right-article-container-fadein
+        opacity: 1
+        transform: translateX(0px)
     
 .section-key-interests-right-title-container
     display: flex   
@@ -75,7 +81,12 @@
         word-wrap: break-word
         color: #FFCC33    
         text-shadow: 6px 6px 0px #222222
-        
+        transform: translateY(-20vh)
+        opacity: 0
+        transition: all 2.5s ease-in-out
+        &.section-key-interests-right-title-fadein-top
+            opacity: 1
+            transform: translateY(0px)
 
 .section-key-interests-left-title-container
     +position(absolute, 35% 0 0 59%)
@@ -89,14 +100,24 @@
         color: #F8F8F8    
         text-align: right 
         text-shadow: 4px 4px 0px #003366, 6px 6px 0px #FFCC33
+        opacity: 0
+        transform: translateX(-20vw)
+        transition: all 2s ease-in-out
+        &.section-key-interests-left-title-container-fadein-left
+            opacity: 1
+            transform: translateX(0px)
     p   
         text-align: right
         font-size: 2em
         color: #F8F8F8   
         text-decoration: underline
         text-shadow: 2px 2px 0px #003366
-                
-            
+        opacity: 0
+        transform: translateX(-20vw)
+        transition: all 1s ease-in-out
+        &.section-key-interests-left-title-container-fadein-left       
+            opacity: 1
+            transform: translateX(0px)
 
         
 #sky
