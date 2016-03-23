@@ -15,7 +15,7 @@ function enableScroll() {
 }
 
     console.log(wScroll_Top_Percentage);
-    if(wScroll_Top_Percentage >= 20){
+    if(wScroll_Top_Percentage >= 10){
         $('.section-key-interests-right-article-container').each(function(i){
             setTimeout(function(){
                $('.section-key-interests-right-article-container').eq(i).addClass('section-key-interests-right-article-container-fadein');}, 500*(i+1));
@@ -36,7 +36,7 @@ function enableScroll() {
         $('.right-container-intro').css("transform" , 'translate(2000px, 0px)');
 
     }
-    else if(wScroll_Top_Percentage <= 20){   
+    else if(wScroll_Top_Percentage <= 10){   
         $('.left-container-intro').css("transform" , 'translate(0px, 0px)');
         $('.right-container-intro').css("transform" , 'translate(0px, 0px)');  
     }
@@ -44,7 +44,7 @@ function enableScroll() {
 
 
     
-    if(wScroll_Top_Percentage >= 110)  {
+    if(wScroll_Top_Percentage >= 90)  {
         setTimeout(function(){
             $('.skills-svg-pre-animation').addClass('skills-svg-post-animation');}, 800);
         setTimeout(function(){
@@ -55,18 +55,18 @@ function enableScroll() {
             $('.section-skills-left-title-container h1').addClass('section-skills-left-title-container-fade-in-right');}, 1000);
         $('.section-key-interests-container-left').css("transform" , 'translate(-2000px, 0px)');
         $('.section-key-interests-container-right').css("transform" ,'translate(2000px, 0px)');  
-    } else if(wScroll_Top_Percentage <= 110 )  {
+    } else if(wScroll_Top_Percentage <= 90 )  {
         $('.section-key-interests-container-left').css("transform" , 'translate(0px, 0px)');
         $('.section-key-interests-container-right').css("transform" , 'translate(0px, 0px)');  
     } 
 
     
-    if(wScroll_Top_Percentage >= 250 ){
+    if(wScroll_Top_Percentage >= 170 ){
         $('.section-skills-container-left').css("transform" , 'translate(-'+ wScroll_Top_Percentage*10 +'px, 0px)');
         $('.section-skills-container-left').css("overflow" , 'hidden');
         $('.section-skills-container-right ').css("transform" , 'translate('+ wScroll_Top_Percentage*10 +'px, 0px)');      
     }
-    else if(wScroll_Top_Percentage <= 250){
+    else if(wScroll_Top_Percentage <= 170){
 
         $('.section-skills-container-left').css("transform" , 'translate(0px, 0px)');
         $('.section-skills-container-right ').css("transform" , 'translate(0px, 0px)');
