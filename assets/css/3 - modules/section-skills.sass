@@ -88,8 +88,9 @@
     
 .section-skills-container-left-mountain-bg-bottom-container
     +size(60vw 100vh)
-    +position(fixed, 0 0 0 0)
+    +position(relative, 0 0 0 0)
     z-index: 35
+    transition: all 0.1s ease-in
     background:
         image: url(/assets/images/swithinmendon-section-skills-left-bg-mountain-bg-bottom.png)
         repeat: no-repeat
@@ -97,8 +98,9 @@
         
 .section-skills-container-left-mountain-bg-middle-container
     +size(60vw 100vh)
-    +position(fixed, 0 0 0 0)
+    +position(relative, -100vh 0 0 0)
     z-index: 34
+    transition: all 0.1s ease-in
     background:
         image: url(/assets/images/swithinmendon-section-skills-left-bg-mountain-bg-middle.png)
         repeat: no-repeat
@@ -106,8 +108,9 @@
     
 .section-skills-container-left-mountain-bg-top-container
     +size(50vw 100vh)
-    +position(fixed, 0 0 0 0)
+    +position(relative, -200vh 0 0 0)
     z-index: 32
+    transition: all 0.1s ease-in
     background:
         image: url(/assets/images/swithinmendon-section-skills-left-bg-mountain-bg-top.png)
         repeat: no-repeat
@@ -126,9 +129,10 @@
     
 .section-skills-container-left-clouds-container
     +size(50vw 100vh)
-    +position(fixed, 0 0 0 0)
+    +position(relative, -300vh 0 0 0)
     z-index: 36
     transform-origin: center center
+    transition: all 0.1s ease-in
     background:
         image: url(/assets/images/swithinmendon-section-skills-left-bg-clouds.png)
         repeat: no-repeat
