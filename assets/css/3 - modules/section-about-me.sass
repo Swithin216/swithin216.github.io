@@ -4,25 +4,23 @@
     width: auto
     z-index: 20
     +position(fixed, 0 0 0 0)
-    h1
+    h1, p, ul
         color: white
-    p   
-        color: white
+     
         
 .section-about-me-left-container
-    height: 100%
     h1
         font-size: 1.5rem
         text-decoration: underline
 .section-about-me-right-container
-    box-shadow: -1px 0px 0px white
     height: 90vh
+    box-shadow: -1px 0px 0px white
     z-index: 25
+    ul
+        padding-left: 20px
     h1
         font-size: 1.5rem
         text-decoration: underline
-        &:nth-child(1)
-            margin-top: 0px
         &:nth-child(2)
             font-size: 1.2rem
             text-decoration: none
@@ -46,8 +44,15 @@
     height: 90vh
 
 .section-about-me-container-bottom
-    height: 10vh
+    height: 20vh
+    z-index: 30
     width: 100%
+
+.section-about-me-footer-bottom
+    background-color: #FF6666
+    padding-top: 1%
+    height: 10vh
+    
 .section-about-me-right-container-what-can-I-do-for-you
     padding-top: 5vw
     ul
@@ -56,10 +61,6 @@
             margin: 2% 0px
             color: white
             
-.section-about-me-footer-bottom
-    background-color: #FF6666
-    height: 10vh
-    padding-top: 1%
     
 .download-resume-container
     padding: 10px
@@ -102,3 +103,52 @@
         transition: 0.5s all ease-in-out
         &:hover
              color: #333333
+        
+        
+@media (max-width: 800px)
+    .section-about-me-container
+        background-color: #333333
+        height: 150vh
+        width: 100%
+        display: block
+        z-index: 40
+        +position(relative, 110vh 0 0 0)
+        h1
+            color: white
+        p   
+            color: white
+
+    .section-about-me-left-container
+        +position(relative, 0 0 0 0)
+        padding: 10px
+        h1
+            font-size: 1.5rem
+            text-decoration: underline
+    .section-about-me-right-container
+        +position(relative, 0vh 0 0 0)
+        padding: 10px
+        box-shadow: -1px 0px 0px white
+        z-index: 25
+        h1
+            font-size: 1.5rem
+            text-decoration: underline
+            &:nth-child(1)
+                margin-top: 0px
+            &:nth-child(2)
+                font-size: 1.2rem
+                text-decoration: none
+
+        
+    .section-about-me-footer-bottom
+        background-color: #FF6666
+        height: 100%
+        padding-top: 1%
+        
+    .section-background-top
+        width: 200vw
+        border-radius: 10px
+        display: block
+        z-index: -10
+        opacity: 0.08
+        +position(absolute, 50% 0 0 50%)
+        transform: translate(-50.3%, -50%) rotate(90deg)

@@ -1,12 +1,15 @@
 .col--12-of-12
     text-align: center
+
 .section-intro-svg-container
     height: 100vh
     width: 50vw
+
     
 .section-intro-container
     height: 100vh
-
+    .col
+        margin-right: 0px
 .left-container-intro
     +position(fixed, 0 0)
     height: 100vh
@@ -39,7 +42,7 @@
     background:
         image: url(/assets/images/Swithn-Mendon-landing-section-bg-img.svg)
         repeat: repeat
-        position: left center
+        position: center center
         size: cover
     
 .right-inner-container
@@ -47,22 +50,12 @@
     top: 45%
     transform: translateY(-50%)
 
-    
-    
-    
-.intro-squid-container
-    width: 20vw
-    height: 100%
-    +position(fixed, 0 0)
-    margin: 15vh auto
-    opacity: 0
-    z-index: 20
 
-    
 .hi-im
     color: #333333
     font-size: 5rem
     text-align: center
+    text-shadow: 2px 2px 0px rgba(247, 247, 247, 1), 6px 6px 0px #F16667
     +animation(hi-im 3s, ease-in)
     z-index: 1
 
@@ -71,15 +64,12 @@
     h1
         text-align: center
         font-size: 3.5rem
+        text-shadow: 2px 2px 0px rgba(247, 247, 247, 1), 4px 4px 0px #F16667
         color: #1D1D1D
         text-decoration: underline
 
 
 
-
-.swithin-container
-
-        
 .swithin
     +size(auto 350px) 
     text-align: center
@@ -101,30 +91,38 @@
     to
         opacity: 1
         
-    
-@media (max-width: 1350px)
-   .hi-im
-        position: relative
-        top: 16vh
-        display: inline-block
-        color: #FDFDFD
-        width: 100%
-        background-color: #1D1D1D
-        font-size: 4.5em
-        text-align: center
-        +animation(hi-im 3s, ease-in)
-              
-@media (max-width: 1100px)     
-    .tile-intro-2
-        h1
-            font-size: 3rem
-            line-height: 50px
+
  
-@media (max-width: 700px)  
+@media (max-width: 800px)  
+    .section-intro-container
+        height: 100vh
+        widows: 100vw
+        .col
+            margin: 0px
+        
+    .left-container-intro
+        display: none
+    
+    .right-container-intro
+        +position(relative, 0 0)
+        height: 100vh
+        z-index: 50
+        margin-left: 0px
+        width: 100vw
+        overflow: hidden
+        transition : 1s ease-in
+        background-color: white
+        
+
+        
+    
     .hi-im 
         font-size: 4em
         top: 45vh
     .swithin-container
         +size(100vw 40vh)
         text-align: center
-        
+                                    
+    .800pxresponsivecontroller
+        float: right
+    
