@@ -752,13 +752,13 @@ th {
   min-height: 1px;
   padding-left: 20px;
   vertical-align: top; }
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     .col {
       display: block;
       margin-left: 0;
       margin-right: 0;
       width: auto; } }
-  @media (max-width: 700px) and (min-width: 480px) {
+  @media (max-width: 800px) and (min-width: 800px) {
     .col[class*="col--m-"] {
       display: inline-block;
       margin-right: -.24em; }
@@ -772,7 +772,7 @@ th {
       width: 25%; }
     .col.col--m-3-of-4 {
       width: 75%; } }
-  @media (max-width: 480px) {
+  @media (max-width: 800px) {
     .col[class*="col--s-"] {
       display: inline-block;
       margin-right: -.24em; }
@@ -979,6 +979,9 @@ body {
 
 .col {
   padding: 0px; }
+
+.800pxresponsivecontroller {
+  float: left; }
 
 .loading-screen-pre-load {
   height: 100vh;
@@ -1684,6 +1687,8 @@ body {
 
 .section-intro-container {
   height: 100vh; }
+  .section-intro-container .col {
+    margin-right: 0px; }
 
 .left-container-intro {
   position: fixed;
@@ -1727,7 +1732,7 @@ body {
 .right-container-bg {
   background-image: url(/assets/images/Swithn-Mendon-landing-section-bg-img.svg);
   background-repeat: repeat;
-  background-position: left center;
+  background-position: center center;
   background-size: cover; }
 
 .right-inner-container {
@@ -1737,22 +1742,11 @@ body {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%); }
 
-.intro-squid-container {
-  width: 20vw;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: 15vh auto;
-  opacity: 0;
-  z-index: 20; }
-
 .hi-im {
   color: #333333;
   font-size: 5rem;
   text-align: center;
+  text-shadow: 2px 2px 0px #f7f7f7, 6px 6px 0px #F16667;
   -webkit-animation: hi-im 3s, ease-in;
   animation: hi-im 3s, ease-in;
   z-index: 1; }
@@ -1760,6 +1754,7 @@ body {
 .tile-intro-2 h1 {
   text-align: center;
   font-size: 3.5rem;
+  text-shadow: 2px 2px 0px #f7f7f7, 4px 4px 0px #F16667;
   color: #1D1D1D;
   text-decoration: underline; }
 
@@ -1784,32 +1779,37 @@ body {
   to {
     opacity: 1; } }
 
-@media (max-width: 1350px) {
-  .hi-im {
+@media (max-width: 800px) {
+  .section-intro-container {
+    height: 100vh;
+    widows: 100vw; }
+    .section-intro-container .col {
+      margin: 0px; }
+  .left-container-intro {
+    display: none; }
+  .right-container-intro {
     position: relative;
-    top: 16vh;
-    display: inline-block;
-    color: #FDFDFD;
-    width: 100%;
-    background-color: #1D1D1D;
-    font-size: 4.5em;
-    text-align: center;
-    -webkit-animation: hi-im 3s, ease-in;
-    animation: hi-im 3s, ease-in; } }
-
-@media (max-width: 1100px) {
-  .tile-intro-2 h1 {
-    font-size: 3rem;
-    line-height: 50px; } }
-
-@media (max-width: 700px) {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 50;
+    margin-left: 0px;
+    width: 100vw;
+    overflow: hidden;
+    -webkit-transition: 1s ease-in;
+    transition: 1s ease-in;
+    background-color: white; }
   .hi-im {
     font-size: 4em;
     top: 45vh; }
   .swithin-container {
     height: 40vh;
     width: 100vw;
-    text-align: center; } }
+    text-align: center; }
+  .800pxresponsivecontroller {
+    float: right; } }
 
 .section-key-interests-container {
   position: fixed;
@@ -1892,8 +1892,8 @@ body {
   background-color: #E6E7E8;
   background-image: url(/assets/images/Swithin-Mendon-key-interests-right-bg-img.svg);
   background-repeat: repeat;
-  background-position: 90% 50%;
-  background-size: 850px; }
+  background-position: 85% 50%;
+  background-size: 900px; }
 
 .section-key-interests-right-article-container {
   padding: 0 0 0 10px;
@@ -2015,6 +2015,48 @@ body {
   padding: 20px;
   margin-top: 10vh; }
 
+@media (max-width: 800px) {
+  .section-key-interests-container {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .section-key-interests-container-left {
+    display: none; }
+  .section-key-interests-container-right {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0px; }
+  .section-key-interests-container-right-sub-container-left {
+    width: 70vw; }
+  .section-key-interests-container-right-sub-container-right {
+    width: 30vw; }
+  .section-key-interests-right-title-container h1 {
+    width: 1em;
+    margin-top: 30vw;
+    text-align: center;
+    font-size: 10vw;
+    line-height: 95%;
+    word-wrap: break-word;
+    color: #FFCC33;
+    text-shadow: 6px 6px 0px #222222;
+    -webkit-transform: translateY(-20vh);
+        -ms-transform: translateY(-20vh);
+            transform: translateY(-20vh);
+    opacity: 0;
+    -webkit-transition: all 2.5s ease-in-out;
+    transition: all 2.5s ease-in-out; }
+    .section-key-interests-right-title-container h1.section-key-interests-right-title-fadein-top {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+          -ms-transform: translateY(0px);
+              transform: translateY(0px); } }
+
 .section-skills-container {
   position: fixed;
   top: 0;
@@ -2026,6 +2068,8 @@ body {
   z-index: 30;
   -webkit-transition: 1s ease-out;
   transition: 1s ease-out; }
+  .section-skills-container:hover {
+    cursor: w-resize; }
 
 .section-skills-container-right {
   position: fixed;
@@ -2036,7 +2080,7 @@ body {
   width: 50%;
   z-index: 31;
   height: 100vh;
-  background-color: lightblue;
+  background-color: #006699;
   margin-left: auto;
   -webkit-transition: 1s ease-in;
   transition: 1s ease-in; }
@@ -2110,8 +2154,7 @@ body {
   left: 0;
   width: 80%;
   margin-left: auto;
-  height: 100vh;
-  background-color: #006699; }
+  height: 100vh; }
 
 .section-skills-right-title-container {
   display: -webkit-box;
@@ -2133,7 +2176,7 @@ body {
     font-size: 4vw;
     line-height: 95%;
     color: #006699;
-    text-shadow: 6px 6px 0px #FFCC66;
+    text-shadow: 3px 3px 0px #333333, 6px 6px 0px #FFCC66;
     opacity: 0;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
@@ -2280,6 +2323,54 @@ body {
     -webkit-transform: rotate(0deg) scale(1);
             transform: rotate(0deg) scale(1); } }
 
+@media (max-width: 800px) {
+  .section-skills-container {
+    position: relative;
+    top: 100vh;
+    right: 0px;
+    bottom: 100vh;
+    left: 0px;
+    height: 110vh; }
+  .section-skills-container-left {
+    display: none; }
+  .section-skills-container-right {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    z-index: 31;
+    height: 120vh;
+    background-color: #006699;
+    margin-left: auto;
+    -webkit-transition: 1s ease-in;
+    transition: 1s ease-in; }
+  .section-skills-right-sub-container-left {
+    display: none; }
+  .section-skills-right-sub-container-right {
+    width: 100vw;
+    height: 100vh; }
+    .section-skills-right-sub-container-right .col {
+      display: inline-block;
+      width: auto; }
+  .skills-right-sub-container-right-title-container h2 {
+    color: white;
+    font-size: 10vw;
+    margin: 0px; }
+    .skills-right-sub-container-right-title-container h2.skills-right-sub-container-right-title-container-zoom-in {
+      opacity: 1; }
+  .main-skills-svg-container {
+    display: block;
+    margin: 1vw 5vw;
+    width: 20vw; }
+  .sub-skills-svg-container {
+    margin: 1vw auto;
+    width: 10vw; }
+  .designing-skills-chart-container {
+    margin: 5vw 10vw;
+    width: 30vw; } }
+
 .section-about-me-container {
   background-color: #333333;
   height: 100vh;
@@ -2290,27 +2381,23 @@ body {
   right: 0;
   bottom: 0;
   left: 0; }
-  .section-about-me-container h1 {
-    color: white; }
-  .section-about-me-container p {
+  .section-about-me-container h1, .section-about-me-container p, .section-about-me-container ul {
     color: white; }
 
-.section-about-me-left-container {
-  height: 100%; }
-  .section-about-me-left-container h1 {
-    font-size: 1.5rem;
-    text-decoration: underline; }
+.section-about-me-left-container h1 {
+  font-size: 1.5rem;
+  text-decoration: underline; }
 
 .section-about-me-right-container {
+  height: 90vh;
   -webkit-box-shadow: -1px 0px 0px white;
           box-shadow: -1px 0px 0px white;
-  height: 90vh;
   z-index: 25; }
+  .section-about-me-right-container ul {
+    padding-left: 20px; }
   .section-about-me-right-container h1 {
     font-size: 1.5rem;
     text-decoration: underline; }
-    .section-about-me-right-container h1:nth-child(1) {
-      margin-top: 0px; }
     .section-about-me-right-container h1:nth-child(2) {
       font-size: 1.2rem;
       text-decoration: none; }
@@ -2338,8 +2425,14 @@ body {
   height: 90vh; }
 
 .section-about-me-container-bottom {
-  height: 10vh;
+  height: 20vh;
+  z-index: 30;
   width: 100%; }
+
+.section-about-me-footer-bottom {
+  background-color: #FF6666;
+  padding-top: 1%;
+  height: 10vh; }
 
 .section-about-me-right-container-what-can-I-do-for-you {
   padding-top: 5vw; }
@@ -2348,11 +2441,6 @@ body {
     .section-about-me-right-container-what-can-I-do-for-you ul li {
       margin: 2% 0px;
       color: white; }
-
-.section-about-me-footer-bottom {
-  background-color: #FF6666;
-  height: 10vh;
-  padding-top: 1%; }
 
 .download-resume-container {
   padding: 10px; }
@@ -2395,6 +2483,70 @@ body {
     transition: 0.5s all ease-in-out; }
     .social-media-container .fa:hover {
       color: #333333; }
+
+@media (max-width: 800px) {
+  .section-about-me-container {
+    background-color: #333333;
+    height: 150vh;
+    width: 100%;
+    display: block;
+    z-index: 40;
+    position: relative;
+    top: 110vh;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+    .section-about-me-container h1 {
+      color: white; }
+    .section-about-me-container p {
+      color: white; }
+  .section-about-me-left-container {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px; }
+    .section-about-me-left-container h1 {
+      font-size: 1.5rem;
+      text-decoration: underline; }
+  .section-about-me-right-container {
+    position: relative;
+    top: 0vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    -webkit-box-shadow: -1px 0px 0px white;
+            box-shadow: -1px 0px 0px white;
+    z-index: 25; }
+    .section-about-me-right-container h1 {
+      font-size: 1.5rem;
+      text-decoration: underline; }
+      .section-about-me-right-container h1:nth-child(1) {
+        margin-top: 0px; }
+      .section-about-me-right-container h1:nth-child(2) {
+        font-size: 1.2rem;
+        text-decoration: none; }
+  .section-about-me-footer-bottom {
+    background-color: #FF6666;
+    height: 100%;
+    padding-top: 1%; }
+  .section-background-top {
+    width: 200vw;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    display: block;
+    z-index: -10;
+    opacity: 0.08;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50.3%, -50%) rotate(90deg);
+        -ms-transform: translate(-50.3%, -50%) rotate(90deg);
+            transform: translate(-50.3%, -50%) rotate(90deg); } }
 
 .section-navigation-container {
   position: fixed;

@@ -4,13 +4,15 @@
     height: 0vh
     z-index: 30
     transition: 1s ease-out
+    &:hover
+        cursor: w-resize
 
 .section-skills-container-right 
     +position(fixed, 0 0 0 0)
     width: 50% 
     z-index: 31
     height: 100vh
-    background-color: lightblue
+    background-color: #006699
     margin-left: auto
     transition : 1s ease-in
 
@@ -67,7 +69,7 @@
     width: 80%
     margin-left: auto
     height: 100vh
-    background-color: #006699
+
     
 .section-skills-right-title-container
     display: flex
@@ -80,7 +82,7 @@
         font-size: 4vw
         line-height: 95%
         color: #006699    
-        text-shadow: 6px 6px 0px #FFCC66
+        text-shadow: 3px 3px 0px #333333, 6px 6px 0px #FFCC66
         opacity: 0
         transition: all 1s ease-in-out 
         &.section-skills-right-title-container-fadein-top
@@ -182,22 +184,52 @@
         transform: rotate(0deg) scale(1)
     
     
+@media (max-width: 800px)  
+    .section-skills-container
+        +position(relative, 100vh 0px)
+        height: 110vh
     
+    .section-skills-container-left
+        display: none
     
+    .section-skills-container-right 
+        +position(relative, 0px 0px)
+        width: 100vw
+        z-index: 31
+        height: 120vh
+        background-color: #006699
+        margin-left: auto
+        transition : 1s ease-in
+            
+    .section-skills-right-sub-container-left
+        display: none
+
+    .section-skills-right-sub-container-right  
+        width: 100vw
+        height: 100vh
+        .col
+            display: inline-block
+            width: auto
+            
+    .skills-right-sub-container-right-title-container
+        h2
+            color: white
+            font-size: 10vw
+            margin: 0px
+            &.skills-right-sub-container-right-title-container-zoom-in
+                opacity: 1
+                
+    .main-skills-svg-container
+        display: block
+        margin: 1vw 5vw
+        width: 20vw
     
+    .sub-skills-svg-container
+        margin: 1vw auto
+        width: 10vw
+        
+    .designing-skills-chart-container
+        margin: 5vw 10vw
+        width: 30vw
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+

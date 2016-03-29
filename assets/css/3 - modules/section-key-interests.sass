@@ -50,8 +50,8 @@
     background:
         image: url(/assets/images/Swithin-Mendon-key-interests-right-bg-img.svg)
         repeat: repeat
-        position: 90% 50%
-        size: 850px
+        position: 85% 50%
+        size: 900px
 
 .section-key-interests-right-article-container
     padding: 0 0 0 10px
@@ -140,3 +140,41 @@
     font-size: 1.5em
     padding: 20px
     margin-top: 10vh 
+    
+    
+    
+    
+    
+@media (max-width: 800px)  
+    .section-key-interests-container
+        +position(relative, 0 0)
+    .section-key-interests-container-left
+        display: none
+    
+    .section-key-interests-container-right
+        +position(relative, 0 0)
+        width: 100%
+        margin: 0px
+    
+    .section-key-interests-container-right-sub-container-left
+        width: 70vw
+
+    .section-key-interests-container-right-sub-container-right
+        width: 30vw
+
+    .section-key-interests-right-title-container
+        h1
+            width: 1em
+            margin-top: 30vw
+            text-align: center
+            font-size: 10vw
+            line-height: 95%
+            word-wrap: break-word
+            color: #FFCC33    
+            text-shadow: 6px 6px 0px #222222
+            transform: translateY(-20vh)
+            opacity: 0
+            transition: all 2.5s ease-in-out
+            &.section-key-interests-right-title-fadein-top
+                opacity: 1
+                transform: translateY(0px)
