@@ -1,11 +1,11 @@
-$(window).load(function(){
-    $('.loading-page-container').css("opacity" , '0');
-    $('.loading-page-container').css("transform" ,'translate(0px, -2000px)');
-    setTimeout(function(){$('.loading-page-container').css("z-index" ,'0');}, 1000);
-
-    $('body').css("height" , '300vh');
-});
-
+//$(window).load(function(){
+//    $('.loading-page-container').css("opacity" , '0');
+//    $('.loading-page-container').css("transform" ,'translate(0px, -2000px)');
+//    setTimeout(function(){$('.loading-page-container').css("z-index" ,'0');}, 1000);
+//
+//    $('body').css("height" , '300vh');
+//});
+//
 
 
 
