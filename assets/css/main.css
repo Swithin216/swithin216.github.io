@@ -979,7 +979,7 @@ th {
   margin-left: 0px; }
 
 body {
-  overflow-y: scroll;
+  overflow-y: hidden;
   height: 100vh; }
 
 .col {

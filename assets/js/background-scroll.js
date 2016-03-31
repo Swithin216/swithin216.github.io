@@ -4,6 +4,7 @@ $(window).load(function(){
     setTimeout(function(){$('.loading-page-container').css("z-index" ,'0');}, 1000);
 
     $('body').css("height" , '300vh');
+    $('body').css("overflow-y" , 'scroll');
 });
 
 
