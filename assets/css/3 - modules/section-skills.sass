@@ -1,0 +1,236 @@
+.section-skills-container
+    +position(fixed, 0 0 0 0)
+    width: auto
+    height: 0vh
+    z-index: 30
+    transition: 1s ease-out
+    &:hover
+        cursor: w-resize
+
+.section-skills-container-right 
+    +position(fixed, 0 0 0 0)
+    width: 50% 
+    z-index: 31
+    height: 100vh
+    background-color: #006699
+    margin-left: auto
+    transition : 1s ease-in
+
+    
+.section-skills-container-left
+    +position(fixed, 0 0 0 0)
+    width: 50%
+    height: 100vh
+    z-index: 30
+    background-color: #F0F0F0 
+    margin-right: auto 
+    overflow: hidden
+    transition : 1s ease-in
+    background:
+        image: url(/assets/images/swithinmendon-section-skills-left-bg.png)
+        repeat: no-repeat
+        position: center center
+        size: 95% 95%
+
+    
+.section-skills-left-title-container
+    +position(absolute, 35% 0 0 43%)
+    transform: translate(-50%, -50%)
+    padding: 2px
+    z-index: 41
+    width: 40vw
+    h1
+        word-wrap: break-word
+        font-size: 5vw
+        line-height: 105%
+        color: #FFCC66   
+        text-align: left 
+        text-shadow: 4px 4px 0px #663333, 6px 6px 0px #F8F8F8
+        opacity: 0
+        transition: all 1.5s ease-in-out
+        &.section-skills-left-title-container-fade-in-right
+            opacity: 1
+    
+.section-skills-right-sub-container-left
+    +position(absolute, 0 0 0 0)
+    width: 20%
+    margin-right: auto
+    height: 100vh
+    background-color: #FF3333
+    box-shadow: inset 5px 0px 5px rgba(0, 0, 0, 0.5), inset -5px 0px 5px rgba(0, 0, 0, 0.5)
+    background:
+        image: url(/assets/images/swithinmendon-section-right-bg-img.png)
+        repeat: no-repeat
+        position: center
+        size: 50vw 100vh
+
+.section-skills-right-sub-container-right  
+    +position(absolute, 0 0 0 0)
+    width: 80%
+    margin-left: auto
+    height: 100vh
+
+    
+.section-skills-right-title-container
+    display: flex
+    justify-content: center
+    align-items: center
+    h1
+        width: 1em
+        margin-top: 30%
+        text-align: center
+        font-size: 4vw
+        line-height: 95%
+        color: #006699    
+        text-shadow: 3px 3px 0px #333333, 6px 6px 0px #FFCC66
+        opacity: 0
+        transition: all 1s ease-in-out 
+        &.section-skills-right-title-container-fadein-top
+            opacity: 1
+    
+.section-skills-container-left-mountain-bg-bottom-container
+    +size(60vw 100vh)
+    +position(relative, 0 0 0 0)
+    z-index: 35
+    background:
+        image: url(/assets/images/swithinmendon-section-skills-left-bg-mountain-bg-bottom.png)
+        repeat: no-repeat
+        size: 55vw 100vh
+        
+.section-skills-container-left-mountain-bg-middle-container
+    +size(60vw 100vh)
+    +position(relative, -100vh 0 0 0)
+    z-index: 34
+    background:
+        image: url(/assets/images/swithinmendon-section-skills-left-bg-mountain-bg-middle.png)
+        repeat: no-repeat
+        size: 55vw 100vh
+    
+.section-skills-container-left-mountain-bg-top-container
+    +size(50vw 100vh)
+    +position(relative, -200vh 0 0 0)
+    z-index: 32
+    background:
+        image: url(/assets/images/swithinmendon-section-skills-left-bg-mountain-bg-top.png)
+        repeat: no-repeat
+        size: 50vw 100vh
+        
+.skillz
+    stroke: coral
+    stroke-width: 10px
+    stroke-dashoffset: 273px
+    stroke-dasharray: 273px
+    fill: coral
+    transition: 1s all ease-in
+    &:hover
+        stroke-dashoffset: 0px
+        stroke-dasharray: 273px
+    
+.section-skills-container-left-clouds-container
+    +size(50vw 100vh)
+    +position(relative, -300vh 0 0 0)
+    z-index: 36
+    transform-origin: center center
+    background:
+        image: url(/assets/images/swithinmendon-section-skills-left-bg-clouds.png)
+        repeat: no-repeat
+        position: 0% 0%
+        size: 50vw 100vh
+
+.skills-right-sub-container-right-title-container
+    h2
+        color: white
+        text-align: center
+        text-decoration: underline
+        transition: 0.5s ease-in-out
+        opacity: 0
+        &.skills-right-sub-container-right-title-container-zoom-in
+            opacity: 1
+        
+.coding-skills-chart-container
+    padding: 5px
+    
+.designing-skills-chart-container
+    margin: 0 auto
+    width: 6vw
+    
+.main-skills-svg-container
+    margin: 0 auto
+    width: 6vw
+
+    
+.sub-skills-svg-container
+    margin: 0 auto
+    width: 4vw
+    
+    
+.skills-svg-pre-animation
+    animation-fill-mode: forwards
+    &.skills-svg-post-animation
+        animation: skills-svg-animation 1.3s ease-in-out
+    
+@keyframes skills-svg-animation
+    0%
+        transform: rotate(0deg) scale(1)
+    20%
+        transform: rotate(50deg) scale(1) 
+    40%
+        transform: rotate(0deg) scale(1)
+    60%
+        transform: rotate(0deg) scale(1.1)
+    80%
+        transform: rotate(0deg) scale(1.1)
+    100%
+        transform: rotate(0deg) scale(1)
+    
+    
+@media (max-width: 800px)  
+    .section-skills-container
+        +position(relative, 100vh 0px)
+        height: 110vh
+        z-index: 50
+    
+    .section-skills-container-left
+        display: none
+    
+    .section-skills-container-right 
+        +position(relative, 0px 0px)
+        width: 100vw
+        z-index: 31
+        height: 120vh
+        background-color: #006699
+        margin-left: auto
+        transition : 1s ease-in
+            
+    .section-skills-right-sub-container-left
+        display: none
+
+    .section-skills-right-sub-container-right  
+        width: 100vw
+        height: 100vh
+        .col
+            display: inline-block
+            width: auto
+            
+    .skills-right-sub-container-right-title-container
+        h2
+            color: white
+            font-size: 10vw
+            margin: 0px
+            &.skills-right-sub-container-right-title-container-zoom-in
+                opacity: 1
+                
+    .main-skills-svg-container
+        display: block
+        margin: 1vw 5vw
+        width: 20vw
+    
+    .sub-skills-svg-container
+        margin: 1vw auto
+        width: 10vw
+        
+    .designing-skills-chart-container
+        margin: 5vw 15vw
+        width: 20vw
+    
+
