@@ -13,6 +13,7 @@
         font-size: 1.5rem
         text-decoration: underline
 .section-about-me-right-container
+    height: 90vh
     box-shadow: -1px 0px 0px white
     z-index: 25
     ul
@@ -106,7 +107,7 @@
 @media (max-width: 800px)
     .section-about-me-container
         background-color: #333333
-        height: 100vh
+        height: 170vh
         display: block
         z-index: 40
         +position(relative, 110vh 0 0 0)
@@ -121,6 +122,7 @@
             font-size: 1.5rem
             text-decoration: underline
     .section-about-me-right-container
+        height: 50vh
         padding: 10px
         box-shadow: -1px 0px 0px white
         h1
@@ -133,7 +135,8 @@
                 text-decoration: none
 
         
-    .section-about-me-container-bottom
+    .section-about-me-footer-bottom
+        +position(relative, 60vh 0)
         height: 20vh
         z-index: 30
         width: 100%
@@ -151,18 +154,18 @@
 @media (max-width: 400px)
     .section-about-me-container
         background-color: #333333
-        height: 120vh
+        height: 180vh
         display: block
         z-index: 40
         
         
-    .section-about-me-container-bottom
+    .section-about-me-footer-bottom
+        +position(relative, 70vh 0)
         height: 25vh
         z-index: 30
         width: 100%
         
-    .section-about-me-container-bottom
-        background-color: blue
+
 
         
         

@@ -1779,6 +1779,14 @@ body {
   to {
     opacity: 1; } }
 
+@media (max-width: 1400px) {
+  .hi-im {
+    font-size: 4rem;
+    margin-top: 7vh;
+    margin-bottom: 0px; }
+  .tile-intro-2 h1 {
+    font-size: 2.8rem; } }
+
 @media (max-width: 800px) {
   body {
     overflow-x: hidden; }
@@ -1804,8 +1812,7 @@ body {
     transition: 1s ease-in;
     background-color: white; }
   .hi-im {
-    font-size: 4em;
-    top: 45vh; }
+    font-size: 4em; }
   .swithin-container {
     height: 40vh;
     width: 100vw;
@@ -2328,6 +2335,12 @@ body {
     -webkit-transform: rotate(0deg) scale(1);
             transform: rotate(0deg) scale(1); } }
 
+@media (max-width: 1400px) {
+  .skills-right-sub-container-right-title-container h2 {
+    color: white;
+    font-size: 3vw;
+    margin: 5px; } }
+
 @media (max-width: 800px) {
   .section-skills-container {
     position: relative;
@@ -2362,7 +2375,7 @@ body {
       width: auto; }
   .skills-right-sub-container-right-title-container h2 {
     color: white;
-    font-size: 10vw;
+    font-size: 7vw;
     margin: 0px; }
     .skills-right-sub-container-right-title-container h2.skills-right-sub-container-right-title-container-zoom-in {
       opacity: 1; }
