@@ -982,11 +982,33 @@ body {
   overflow-y: hidden;
   height: 100vh; }
 
+@media screen and (orientation: landscape) and (max-device-width: 500px) {
+  .section-key-interests-container {
+    display: none; }
+  .section-skills-container {
+    display: none; }
+  .section-intro-container {
+    display: none; }
+  .section-about-me-container {
+    display: none; }
+  body {
+    background-color: #FF6666; }
+    body:after {
+      position: fixed;
+      top: 20%;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: 'This website can only be viewed in portrait mode :(';
+      font-size: 3rem;
+      display: inline-block;
+      line-height: 200%;
+      height: 100%;
+      font-weight: 800;
+      text-align: center; } }
+
 .col {
   padding: 0px; }
-
-.800pxresponsivecontroller {
-  float: left; }
 
 .loading-screen-pre-load {
   height: 100vh;
@@ -2430,7 +2452,6 @@ body {
   width: 80vw;
   -webkit-border-radius: 10px;
           border-radius: 10px;
-  display: block;
   z-index: -10;
   opacity: 0.08;
   position: absolute;
@@ -2511,7 +2532,6 @@ body {
   .section-about-me-container {
     background-color: #333333;
     height: 170vh;
-    display: block;
     z-index: 40;
     position: relative;
     top: 110vh;
@@ -2553,7 +2573,6 @@ body {
     width: 200vw;
     -webkit-border-radius: 10px;
             border-radius: 10px;
-    display: block;
     z-index: 1;
     opacity: 0.08;
     position: fixed;
@@ -2569,7 +2588,6 @@ body {
   .section-about-me-container {
     background-color: #333333;
     height: 180vh;
-    display: block;
     z-index: 40; }
   .section-about-me-footer-bottom {
     position: relative;
