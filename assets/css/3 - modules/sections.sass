@@ -4,12 +4,34 @@
 body
     overflow-y: hidden
     height: 100vh
+    
+@media screen and (orientation: landscape) and (max-device-width: 500px)
+    .section-key-interests-container 
+        display: none
+    .section-skills-container
+        display: none
+    .section-intro-container
+        display: none
+    .section-about-me-container
+        display: none
+    body
+        background-color: #FF6666
+        &:after
+            +position(fixed, 20% 0 0 0)
+            content: 'This website can only be viewed in portrait mode :('
+            font-size: 3rem
+            display: inline-block
+            line-height: 200%
+            height: 100%
+            font-weight: 800
+            text-align: center
+            
+       
+    
 .col
     padding: 0px
     
-.800pxresponsivecontroller
-    float: left
-    
+
 .loading-screen-pre-load
     height: 100vh
     width: auto
