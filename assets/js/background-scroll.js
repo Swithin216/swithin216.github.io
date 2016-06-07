@@ -94,13 +94,13 @@ $(document).ready(function(){
         var amountMovedX = (e.pageX * -1 );
         var amountMovedY = (e.pageY * -1 );
 
-        $('.section-skills-container-left-clouds-container').css("transform" , 'translate( ' + -(amountMovedX / 100) + 'px , 0px)');
+        $('.section-skills-container-left-clouds-container').css("transform" , 'translate( ' + -(amountMovedX / 110) + 'px , 0px)');
 
-        $('.section-skills-container-left-mountain-bg-top-container').css("transform" , 'translate(' + amountMovedX / 20 + 'px , 0px)');
+        $('.section-skills-container-left-mountain-bg-top-container').css("transform" , 'translate(' + amountMovedX / 90 + 'px , 0px)');
 
-        $('.section-skills-container-left-mountain-bg-middle-container').css("transform" ,'translate(' + amountMovedX / 30 + 'px , 0px)');
+        $('.section-skills-container-left-mountain-bg-middle-container').css("transform" ,'translate(' + amountMovedX / 50 + 'px , 0px)');
 
-        $('.section-skills-container-left-mountain-bg-bottom-container').css("transform" , 'translate(' + amountMovedX / 80 + 'px , 0px)');
+        $('.section-skills-container-left-mountain-bg-bottom-container').css("transform" , 'translate(' + amountMovedX / 20 + 'px , 0px)');
         
     });
 });
